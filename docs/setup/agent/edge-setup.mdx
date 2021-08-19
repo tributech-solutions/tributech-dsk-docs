@@ -1,5 +1,18 @@
 # DSK Agent Edge Setup
 
+import CodeBlock from '@theme/CodeBlock';
+import DskAgentDockerCompose from '!!raw-loader!../../../deployments/dsk-agent/docker-compose.yml';
+
+Use the following button to deploy an Azure VM, install docker/docker-compose, login to private docker registry and start Tribtuech DSK Edge services.  
+
+<!-- https://raw.githubusercontent.com/tributech-solutions/tributech-dsk-docs/feature/agent-doc-1-9-0/deployments/dsk-agent/azuredeploy.json -->
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftributech-solutions%2Ftributech-dsk-docs%2Ffeature%2Fagent-doc-1-9-0%2Fdeployments%2Fdsk-agent%2Fazuredeploy.json)
+[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Ftributech-solutions%2Ftributech-dsk-docs%2Ffeature%2Fagent-doc-1-9-0%2Fdeployments%2Fdsk-agent%2Fazuredeploy.json)
+
+The docker-compose file used during deployment:  
+
+<CodeBlock className="language-yml" title="docker-compose.yml">{DskAgentDockerCompose}</CodeBlock>
+
 ## Requirements
 
 The required resources to install a DSK Agent Edge are negligible in comparison to the resources required for data processing. For installation, an edge device must meet the following requirements:
